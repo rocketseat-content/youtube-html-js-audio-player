@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rocketcast</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="player">
+      <h4><i class="material-icons">equalizer</i>Rocketcast</h4>
+      <div class="card">
+        <div class="card-image">
+          <a href="#" class="btn-floating btn-large halfway-fab">
+            <i class="material-icons" id="play-pause">play_arrow</i>
+          </a>
+        </div>
+        <div class="card-content">
+          <h5>Title</h5>
+          <p class="artist">Artist</p>
+          <div class="row valign-wrapper" id="player-controls">
+            <div class="col s2" id="current-duration">00:00</div>
+            <div class="col s6 range-field valign-wrapper">
+              <input type="range" min="0" max="0" id="seekbar" step="1" />
+            </div>
+            <div class="col s2" id="total-duration">00:00</div>
+            <div>
+              <a href="#">
+                <i class="material-icons" id="volume-icon">volume_up</i>
+              </a>
+            </div>
+            <div class="col s3 range-field valign-wrapper" id="volume">
+              <input
+                type="range"
+                min="0"
+                max="100"
+                id="volume-control"
+                step="1"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="change-tracks">
+          <a href="#" class="btn-floating btn-large" id="previous-track">
+            <i class="material-icons">skip_previous</i>
+          </a>
+          <a href="#" class="btn-floating btn-large" id="next-track">
+            <i class="material-icons">skip_next</i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <script src="index.js" type="module"></script>
+  </body>
+</html>

@@ -1,0 +1,85 @@
+@import "https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/3.0.1/iconfont/material-icons.min.css";
+@import "https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css";
+
+:root {
+  --primary: #7159c1;
+}
+
+body {
+  height: 100vh;
+  background-color: #efefef;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#player {
+  background-color: white;
+  width: 90%;
+  max-width: 375px;
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
+    0px 3px 1px -2px rgba(0, 0, 0, 0.12), 0px 1px 5px 0px rgba(0, 0, 0, 0.2); /* x-axis y-axis blur spread color */
+}
+
+.card {
+  box-shadow: none;
+  margin: 0;
+}
+
+h4 {
+  color: var(--primary);
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+}
+
+.card-image {
+  background: url("https://placehold.it/500") no-repeat center center / cover;
+  height: 200px;
+}
+
+audio {
+  width: 100%;
+  margin-top: 30px;
+}
+
+#play-pause,
+#previous-track,
+#next-track {
+  background-color: var(--primary);
+}
+
+#player-controls {
+  margin-bottom: 0px;
+  margin-top: 10px;
+}
+
+#volume-icon {
+  color: var(--primary);
+  transform: translateY(3px);
+}
+
+/* Chrome */
+input[type="range"]::-webkit-slider-thumb {
+  background-color: var(--primary);
+}
+
+/* Mozilla */
+input[type="range"]::-moz-range-thumb {
+  background-color: var(--primary);
+}
+
+/* Internet Explorer e Edge */
+input[type="range"]::-ms-thumb {
+  background-color: var(--primary);
+}
+
+.change-tracks {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-evenly;
+}
